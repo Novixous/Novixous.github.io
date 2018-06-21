@@ -748,13 +748,13 @@ body {
     .dropdown {
         width: 100%;
         text-align: left;
-        position: inherit;
+        position: sticky;
     }
     .dropbtn {
         margin: 0 auto;
         text-align: left;
         width: 100%;
-        position: inherit;
+        position: sticky;
     }
     .Left-main {
         flex: 100%;
@@ -862,13 +862,13 @@ body {
     .dropdown {
         width: 100%;
         text-align: left;
-        position: inherit;
+        position: sticky;
     }
     .dropbtn {
         margin: 0 auto;
         text-align: left;
         width: 100%;
-        position: inherit;
+        position: sticky;
     }
     .Left-main {
         flex: 100%;
@@ -943,13 +943,13 @@ body {
     .dropdown {
         width: 100%;
         text-align: left;
-        position: inherit;
+        position: sticky;
     }
     .dropbtn {
         margin: 0 auto;
         text-align: left;
         width: 100%;
-        position: inherit;
+        position: sticky;
     }
     .Left-main {
         flex: 100%;
