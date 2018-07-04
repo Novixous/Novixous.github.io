@@ -452,21 +452,22 @@ body {
     transition: all 1.2s;
     transform: scale(1);
 }
+
 .aboutus {
     background-color: white;
     text-align: left;
 }
 
 .aboutus_text {
-   margin: 5%;
+    margin: 5%;
     font-family: Baskerville;
     font-size: 1.07em;
     line-height: 2;
     font-weight: 300;
-    
+
 }
 
-.upper{
+.upper {
     background-color: #eeeff0;
 }
 
@@ -475,6 +476,7 @@ body {
     transition: all 1.2s;
     cursor: default;
 }
+
 .main-container {
     width: 100%;
     background-color: white;
@@ -649,6 +651,232 @@ body {
 .social-icons a {
     color: gray;
     font-size: 20px;
+}
+
+.left-single-product ul {
+    list-style: none;
+    width: 130px;
+}
+
+.product-upper img {
+    width: 100%;
+}
+
+.product-upper {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    color: #333;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+.product-upper img:hover {
+    transform: scale(1.1);
+}
+
+.left-single-product,
+.right-single-product {
+    flex: 25%;
+    font-family: 'gurmukhi_mnregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+.right-single-product {
+    padding-left: 4%;
+}
+
+.left-single-product ul {
+    margin: 24px 60px;
+    padding: 0 0;
+}
+
+.middle-single-product {
+    overflow: hidden;
+    padding: 24px 20px;
+    flex: 30%;
+}
+
+.middle-single-product img:hover {
+    transform: scale(1.05);
+    cursor: zoom-in;
+}
+
+.product-header {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 24px 0;
+    margin-bottom: 24px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.selector-wrapper,
+.quantity-wraper {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.selector-wrapper label,
+.quantity-wraper label {
+    font-family: 'gurmukhi_mnregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    text-align: left;
+    width: 50%;
+    float: left;
+}
+
+.product-selector {
+    width: 50%;
+    height: 30px;
+    float: right;
+    max-width: none;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0;
+}
+
+.item-button {
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    font-family: 'gurmukhi_mnregular', Arial;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #212121;
+    color: #fff;
+}
+
+.details-trigger {
+    margin: 20px auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'gurmukhi_mnregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    color: #212121;
+    text-decoration: none;
+}
+
+.ProductDetails {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fafafa;
+    transform: skewY(-2deg);
+    margin: 0 0;
+    padding-top: 80px;
+    padding: 50px 0;
+}
+
+.ProductDetails-column {
+    transform: skewY(2deg);
+    flex: 33.333333%;
+}
+
+.item-social {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Details-label {
+    width: 50%;
+    float: left;
+}
+
+.Details-info {
+    padding-top: 15px;
+    width: 50%;
+    float: right;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    color: #333;
+}
+
+.Details-info a {
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    color: #333;
+}
+
+.Details-info ul {
+    list-style: none;
+    padding: 0 0;
+}
+
+.Product-Details {
+    width: 70%;
+    margin-left: 20%;
+}
+
+.Details-section {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+
+.item-grid-img img:hover {
+    background-color: #fafafa;
+    transform: scale(1);
+}
+
+.grid-image-box {
+    transform: skewY(-2deg);
+    padding-bottom: 45px;
+}
+
+.grid-main {
+    margin-top: -50px;
+    transform: skewY(2deg);
+}
+
+.item-grid-img {
+    background-color: #fafafa;
+}
+.item-grid-img img{
+    height: 100%;
+    width: 100%;
+}
+.Related {
+    width: 100%;
+    text-align: center;
+}
+.Related-Row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Related-column {
+    padding: 0.5%;
+    flex:25%;
+}
+.Related-column img{
+    width: 100%;
+}
+.Related-column img:hover{
+    transform: scale(1.03);
+}
+.Related-column a{
+    font-family: 'gurmukhi_mnregular', Arial,"Helvetica Neue",Helvetica,sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    color: #212121;
+    margin-bottom: 4px;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -1038,210 +1266,211 @@ body {
 
 /*Log in form css*/
 
-    #SIcontainer {
-        position: relative;
-        display: block;
-        padding: 15px;
-        width: 50%;
-        height: 280px;
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+#SIcontainer {
+    position: relative;
+    display: block;
+    padding: 15px;
+    width: 50%;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
-    #SIcontainer form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+#SIcontainer form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    #SIcontainer input[type=text], 
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
-        display: block;
-        margin: 0 auto;
-        width: 430px;
-        height: 30px;
-        padding: 10px;
-        border: 0.5px transparent black;
-    }
-    
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
-        margin-top: 10px;
-    }
+#SIcontainer input[type=text],
+#SIcontainer input[type=password],
+#SIcontainer input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    width: 430px;
+    height: 30px;
+    padding: 10px;
+    border: 0.5px transparent black;
+}
 
-    #SIcontainer input[type=submit]{
-        font-family: inherit;
-        font-size: 14px;
-        background-color: rgba(0,0,0,0.9);
-        color: lightgoldenrodyellow;
-        padding-top: 5px;
-        padding-bottom: 18px;
-    }
+#SIcontainer input[type=password],
+#SIcontainer input[type=submit] {
+    margin-top: 10px;
+}
 
-    #SIcontainer h2{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-    }
+#SIcontainer input[type=submit] {
+    font-family: inherit;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgoldenrodyellow;
+    padding-top: 5px;
+    padding-bottom: 18px;
+}
 
-    #SIcontainer #signuplink{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 200px;
-        color: black;
-        text-decoration: none;
-    }
+#SIcontainer h2 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#SIcontainer #signuplink {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    color: black;
+    text-decoration: none;
+}
 
 /*Sign up form css*/
 
-    #sign_up_container {
-        position: relative;
-        display: block;
-        padding: 15px;
-        width: 30%;
-        height: 280px;
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        
-    }
+#sign_up_container {
+    position: relative;
+    display: block;
+    padding: 15px;
+    width: 30%;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
-     #sign_up_container form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 30px;
-    }
+}
 
-    #sign_up_container input[type=text], 
-    #sign_up_container input[type=password], 
-    #sign_up_container input[type=submit]{
-        display: block;
-        margin: 0 auto;
-        width: 430px;
-        height: 30px;
-        padding: 10px;
-        border: 0.5px transparent black;
-    }
+#sign_up_container form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+}
 
-    #sign_up_container input[type=password], 
-    #sign_up_container input[type=submit]{
-        margin-top: 10px;
-    }
+#sign_up_container input[type=text],
+#sign_up_container input[type=password],
+#sign_up_container input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    width: 430px;
+    height: 30px;
+    padding: 10px;
+    border: 0.5px transparent black;
+}
 
-    #sign_up_container input[type=submit]{
-        font-family: inherit;
-        font-size: 14px;
-        background-color: rgba(0,0,0,0.9);
-        color: lightgoldenrodyellow;
-        padding-top: 5px;
-        padding-bottom: 18px;
-    }
+#sign_up_container input[type=password],
+#sign_up_container input[type=submit] {
+    margin-top: 10px;
+}
 
-    #sign_up_container #lastname {
-        margin-top: 10px;
-    }
+#sign_up_container input[type=submit] {
+    font-family: inherit;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgoldenrodyellow;
+    padding-top: 5px;
+    padding-bottom: 18px;
+}
 
-    #sign_up_container #username {
-        margin-top: 10px;
-    }
+#sign_up_container #lastname {
+    margin-top: 10px;
+}
 
-    #sign_up_container h2{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-    }
+#sign_up_container #username {
+    margin-top: 10px;
+}
+
+#sign_up_container h2 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
 
 /*Responsive for Log In Form*/
-@media screen and (max-width: 500px){
-    
+
+@media screen and (max-width: 500px) {
+
     #SIcontainer {
         width: 90%;
     }
-    
-    #SIcontainer form{
+
+    #SIcontainer form {
         width: 90%;
     }
-    
-    #SIcontainer #signuplink{
+
+    #SIcontainer #signuplink {
         margin-top: 150px;
         font-size: 1em;
     }
-    
-    #SIcontainer h2{
+
+    #SIcontainer h2 {
         display: block;
         text-align: center;
         margin-top: 30px;
         font-size: 15px;
     }
-    
-    #SIcontainer input[type=text], 
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
+
+    #SIcontainer input[type=text],
+    #SIcontainer input[type=password],
+    #SIcontainer input[type=submit] {
         width: 200px;
         height: 15px;
     }
 }
 
-@media screen and (max-width: 700px){
-    
-    #SIcontainer{
+@media screen and (max-width: 700px) {
+
+    #SIcontainer {
         width: 90%;
     }
-    
-    #SIcontainer form{
+
+    #SIcontainer form {
         width: 60%;
     }
-    
-    #SIcontainer #signuplink{
+
+    #SIcontainer #signuplink {
         margin-top: 150px;
         font-size: 1em;
     }
-    
-    #SIcontainer h2{
+
+    #SIcontainer h2 {
         display: block;
         text-align: center;
         margin-top: 45px;
         font-size: 1.2em;
     }
-    
-    #SIcontainer input[type=text], 
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
+
+    #SIcontainer input[type=text],
+    #SIcontainer input[type=password],
+    #SIcontainer input[type=submit] {
         width: 100%;
         height: 15px;
     }
 }
 
-@media screen and (max-width: 1047px){
-     #SIcontainer{
+@media screen and (max-width: 1047px) {
+    #SIcontainer {
         width: 60%;
     }
-    
-    #SIcontainer form{
+
+    #SIcontainer form {
         width: 60%;
     }
-    
-    #SIcontainer #signuplink{
+
+    #SIcontainer #signuplink {
         margin-top: 150px;
         font-size: 1em;
     }
-    
-    #SIcontainer h2{
+
+    #SIcontainer h2 {
         display: block;
         text-align: center;
         margin-top: 45px;
         font-size: 1.2em;
     }
-    
-    #SIcontainer input[type=text], 
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
+
+    #SIcontainer input[type=text],
+    #SIcontainer input[type=password],
+    #SIcontainer input[type=submit] {
         width: 100%;
         height: 15px;
     }
