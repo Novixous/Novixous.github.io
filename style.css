@@ -919,7 +919,7 @@ body {
 }
 
 .zoom img {
-    margin: auto;
+    height: 100%;
     border: 1px solid #FFFFFF;
 }
 
@@ -1416,6 +1416,9 @@ body {
     .Related-column {
         flex: 50%;
         width: 50%;
+    }
+    .zoom img {
+        width:100%;
     }
 
     /*************************************************************************************************/
