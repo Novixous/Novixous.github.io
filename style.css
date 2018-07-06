@@ -910,7 +910,6 @@ body {
 }
 
 .zoom {
-    padding: 0 auto;
     display: block;
     position: fixed;
     width: 0px;
