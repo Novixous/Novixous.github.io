@@ -910,7 +910,7 @@ body {
 }
 
 .zoom {
-    display: block;
+    display: inline-block;
     position: fixed;
     width: 0px;
     height: 0px;
@@ -922,10 +922,15 @@ body {
     width: 100%;
     border: 1px solid #FFFFFF;
 }
+
 .zoom_container {
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: fit-content;
 }
+
 #closezoombtn {
     text-decoration: none;
     color: black;
@@ -1421,7 +1426,7 @@ body {
         width: 50%;
     }
     .zoom img {
-        width:100%;
+        width: 100%;
     }
 
     /*************************************************************************************************/
