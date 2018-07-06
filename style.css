@@ -923,7 +923,7 @@ body {
     border: 1px solid #FFFFFF;
 }
 .zoom_container {
-    margin: 0 auto;
+    margin: auto;
     width: fit-content;
 }
 #closezoombtn {
