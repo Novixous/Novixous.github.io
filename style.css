@@ -919,10 +919,13 @@ body {
 }
 
 .zoom img {
-    height: 100%;
+    width: 100%;
     border: 1px solid #FFFFFF;
 }
-
+.zoom_container {
+    margin: 0 auto;
+    width: fit-content;
+}
 #closezoombtn {
     text-decoration: none;
     color: black;
