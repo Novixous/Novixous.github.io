@@ -12,7 +12,10 @@
 </head>
 
 <body>
-
+    <div class="zoom" id="zoom">
+        <a href="javascript:void(0)" id="closezoombtn" onclick="closezoom()">&times;</a>
+        <img src="Resources/Item/grid1.jpg" id="zoom_img">
+    </div>
     <div id="header" class="header">
         <div style="width: 100%; height: 80px; text-align: center;">
             <img id="title-image" src="Resources/logo_410x.png" alt="Header-image">
@@ -71,14 +74,14 @@
             <div class="product-upper">
                 <div class="left-single-product">
                     <ul>
-                        <li><img src="Resources/Item/grid1.jpg"></li>
-                        <li><img src="Resources/Item/grid2.jpg"></li>
-                        <li><img src="Resources/Item/grid3.jpg"></li>
-                        <li><img src="Resources/Item/grid4.jpg"></li>
+                        <li><img src="Resources/Item/grid1.jpg" onclick="selectimg(1)"></li>
+                        <li><img src="Resources/Item/grid2.jpg" onclick="selectimg(2)"></li>
+                        <li><img src="Resources/Item/grid3.jpg" onclick="selectimg(3)"></li>
+                        <li><img src="Resources/Item/grid4.jpg" onclick="selectimg(4)"></li>
                     </ul>
                 </div>
                 <div class="middle-single-product">
-                    <img src="Resources/Item/grid1.jpg">
+                    <img src="Resources/Item/grid1.jpg" id="item_view" onclick="zoomimg()">
                 </div>
                 <div class="right-single-product">
                     <div class="product-header">
@@ -197,7 +200,7 @@
                             </p>
                             <p>$64.00</p>
                             <p>Multiple colors available</p>
-                        </div>                        
+                        </div>
                     </div>
                     <div class="Related-column">
                         <img src="Resources/Item/Related3.jpg">
@@ -274,8 +277,25 @@
 
         </div>
     </div>
-
 </body>
+<script>
+    function selectimg(img) {
+        var item_view = document.getElementById("item_view");
+        var path_img = "Resources/Item/grid" + img + ".jpg";
+        item_view.src = path_img;
+    }
+    function closezoom(){
+        var zoom = document.getElementById("zoom");
+        zoom.style.width = "0px";
+    }
+    function zoomimg(){
+        var zoom = document.getElementById("zoom");
+        var item_view = document.getElementById("item_view").src;
+        var zoom_img = document.getElementById("zoom_img");
+        zoom_img.src = item_view;
+        zoom.style.width = "100%";
+    }
+</script>
 <script type="text/javascript" src="javascript.js"></script>
 
 </html>
