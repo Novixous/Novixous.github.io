@@ -913,6 +913,7 @@ body {
     display: block;
     position: fixed;
     width: 0px;
+    height: 0px;
     z-index: 20;
     background-color: #f2f2f2;
 }
