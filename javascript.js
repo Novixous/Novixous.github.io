@@ -15,6 +15,7 @@ var small_logo = document.getElementById("smalllogo");
 var navbutton = document.getElementById("MenuText");
 var header = document.getElementById("header");
 var title_image = document.getElementById("title-image");
+var row = document.getElementById("row");
 
 function DefaultLogo() {
     if (document.documentElement.clientWidth > 1030) {
@@ -36,6 +37,7 @@ function Resize() {
         title_image.src = "Resources/logo_410x.png";
         title_image.style.width = "400px";
         title_image.style.height = "40px";
+        row.style.paddingTop = "0px";
         if (document.documentElement.clientWidth < 1600) {
             small_logo.style.marginTop = "0px";
             small_logo.style.display = "none";
@@ -67,6 +69,7 @@ function Resize() {
         navbar.style.transition = "0s";
         navbar.style.width = "0";
         navbar.style.height = "100%";
+        row.style.paddingTop = "100px";
         /*
         text-align: center;
         width: 3.5%;
@@ -83,6 +86,7 @@ function Resize() {
 function myFunction() {
     if (document.documentElement.clientWidth > 1030) {
         navbutton.style.fontSize = "0px";
+        row.style.paddingTop = "0px";
         if (window.pageYOffset >= sticky_pos) {
             small_logo.style.marginTop = "25px";
             small_logo.style.display = "block";
@@ -104,6 +108,7 @@ function myFunction() {
     }
     if (document.documentElement.clientWidth <= 1030) {
         navbutton.style.fontSize = "25px";
+        row.style.paddingTop = "100px";
         if (window.pageYOffset >= sticky_pos) {
             navbutton.style.position = "fixed";
             navbutton.style.zIndex = "7";
