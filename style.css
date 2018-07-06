@@ -919,9 +919,6 @@ body {
 }
 
 .zoom img {
-    top: 50%;
-    left: 50%;
-    transform: translate(50%, 0);
     height: 100%;
     border: 1px solid #FFFFFF;
 }
