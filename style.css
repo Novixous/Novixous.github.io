@@ -1418,9 +1418,6 @@ body {
         width: 50%;
     }
     .zoom img {
-        top: 0%; 
-        left: 0%; 
-        transform: translate(0, 0);
         width:100%;
     }
 
