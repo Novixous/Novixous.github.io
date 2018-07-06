@@ -910,6 +910,7 @@ body {
 }
 
 .zoom {
+    padding: 0 auto;
     display: block;
     position: fixed;
     width: 0px;
@@ -919,7 +920,7 @@ body {
 }
 
 .zoom img {
-    margin: auto;
+    margin: 0 auto;
     border: 1px solid #FFFFFF;
 }
 
