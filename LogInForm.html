@@ -28,8 +28,8 @@
                 <button class="dropbtn">OUTDOORS</button>
             </a>
             <div class="dropdown-content">
-                <a href="#">Outdoor Funiture</a>
-                <a href="#">Planters & Jardinieres</a>
+                <a href="Outdoor_furniture.html">Outdoor Funiture</a>
+                <a href="Planters_Jardinieres.html">Planters & Jardinieres</a>
                 <a href="#">Lanterns</a>
                 <a href="#">Outdoor Pillows</a>
             </div>
@@ -60,7 +60,6 @@
             <img src="Resources/logo-small_112x.png" id="smalllogo">
         </div>
         <a href="LogInForm.html" class="right active">Login</a>
-        <a href="#" class="right">Contact</a>
     </div>
 
     <div class="row" id="row">
@@ -69,8 +68,8 @@
                 <h2>SIGN IN</h2>
                 <form>
                     <label for="username"></label> <input type="text" id="username" name="username" placeholder="Email">
-                    <label for="password"></label> <input type="password" id="SIpassword" name="SIpassword" placeholder="Password">
-                    <input type="submit" value="SIGN IN">
+                    <label for="password"></label> <input type="password" id="password" name="password" placeholder="Password">
+                    <input type="submit" value="SIGN IN" onclick="validate()">
                 </form>
                 <a id="signuplink" href="SignUpForm.html">Don't have an account ?</a>
             </div>
@@ -129,6 +128,39 @@
     </div>
 
 </body>
+
+<script>
+    var ck_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    function validate() {
+        form = document.getElementById("form");
+        var email = form.username.value;
+        var errors = [];
+
+        if (!ck_email.test(email)) {
+            errors[errors.length] = "Plese enter your email correctly.";
+        }
+
+        if (errors.length > 0) {
+            reportErrors(errors);
+            return false;
+        }
+        return true;
+    }
+
+    function reportErrors(errors) {
+        var msg = " Please enter valid data !!!\n";
+        for (var i = 0; i < errors.length; i++) {
+            var numError = i + 1;
+            msg += "\n" + numError + "." + errors[i];
+        }
+        alert(msg);
+    }
+
+</script>
+
 <script type="text/javascript" src="javascript.js"></script>
+
+
 
 </html>

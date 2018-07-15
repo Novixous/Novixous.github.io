@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product | Modern Relik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="zoom" id="zoom">
+        <a href="javascript:void(0)" id="closezoombtn" onclick="closezoom()">&times;</a>
+        <div class="zoom_container"><img src="Resources/Sofas_Daybeds/axel_v_sofa_product/axelv-sofa3_704x.jpg" id="zoom_img"></div>
+    </div>
+    <div id="header" class="header">
+        <div style="width: 100%; height: 80px; text-align: center;">
+            <img id="title-image" src="Resources/logo_410x.png" alt="Header-image">
+        </div>
+        <!--<div class="header-content">
+            <h1 id="Web-title">My Website</h1>
+        </div>-->
+    </div>
+    <span id="MenuText" onclick="openNav()">&#9776; MENU</span>
+    <div class="navbar" id="navbar">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <div class="dropdown">
+            <a id="dropbtn">
+                <button class="dropbtn">OUTDOORS</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="Outdoor_furniture.html">Outdoor Funiture</a>
+                <a href="Planters_Jardinieres.html">Planters &amp; Jardinieres</a>
+                <a href="#">Lanterns</a>
+                <a href="#">Outdoor Pillows</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a id="dropbtn" class="active">
+                <button class="dropbtn">FUNITURE</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="Seating.html">Seating</a>
+                <a href="Tables.html">Tables</a>
+                <a href="#">Limited Edition (Vintage)</a>
+                <a href="#">Rattan Collection</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a id="dropbtn">
+                <button class="dropbtn">DECOR</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="#">Accessories</a>
+                <a href="#">Bath</a>
+                <a href="#">Art &amp; Mirror</a>
+                <a href="#">Rugs</a>
+            </div>
+        </div>
+        <div class="topnav-centered">
+            <img src="Resources/logo-small_112x.png" id="smalllogo">
+        </div>
+        <a href="LogInForm.html" class="right">Login</a>
+    </div>
+
+    <div class="row" id="row">
+        <div class="main">
+            <div class="product-upper">
+                <div class="left-single-product">
+                    <ul>
+                        <li><img src="Resources/Sofas_Daybeds/axel_v_sofa_product/axelv-sofa3_704x.jpg" onclick="selectimg(1)"></li>
+                        <li><img src="Resources/Sofas_Daybeds/axel_v_sofa_product/axelv-sofa4_704x.jpg" onclick="selectimg(2)"></li>
+                    </ul>
+                </div>
+                <div class="middle-single-product">
+                    <img src="Resources/Sofas_Daybeds/axel_v_sofa_product/axelv-sofa3_704x.jpg" id="item_view" onclick="zoomimg()">
+                </div>
+                <div class="right-single-product">
+                    <div class="product-header">
+                        <h1>AXEL V. SOFA</h1>
+                        <span>$2,985.00</span>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="selector-wrapper">
+                                <label>Color</label>
+                                <select class="product-selector">
+                                    <option value="White">White</option>
+                                </select>
+                            </div>
+                            <div class="selector-wrapper">
+                                <label>Quantity</label>
+                                <input class="product-selector" type="number" value=1 min=1 max=100>
+                            </div>
+                            <input class="item-button" type="submit" value="Add to cart">
+                            <input class="item-button" type="button" value="Add to registry">
+                            <div class="social-icons item-social">
+                                <a href="https://twitter.com/modernrelikhome" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/modernrelikhome" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.pinterest.com/modernrelik/" class="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                <a href="https://plus.google.com/113685492164723538125" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/modernrelik/" class="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="details-trigger">
+                                <a class="details-trigger" href="#ProductDetails">View details</a>
+                            </div>
+                        </form>
+                    </div>
+                    <ul></ul>
+                    <div></div>
+                </div>
+            </div>
+            <div id="ProductDetails" class="ProductDetails">
+                <div class="ProductDetails-column">
+
+                </div>
+                <div class="ProductDetails-column">
+                    <h5>ABOUT</h5>
+                    <p>The Axel V. pays homage to Belgian designer Axel Vervoordt's timeless interior designs. Nothing creates a sleek contemporary look like the low track arms of this long, roomy sofa. A single bench cushion seat and minimal adornment help to create unbroken lines and plains that are understated, lean, and confident.  This is a transitional sofa that works beautifully in spaces that can't go too modern but beg a stylish look.  Available in standard or extra long length as well as a queen sleeper size. </p>
+                    <p>Standard cushions are semi-firm with a bounce-back appearance and down back cushions.  Cushions can be modified for additional softness. Constructed of exceptional craftsmanship, the frame is made of hardwood with double-doweled joints, and houses eight-way, hand tied spring construction. </p>
+                    <p>Photos below show slipcovered version. Upholstered version will have tight fabric.</p>
+                </div>
+                <div class="ProductDetails-column">
+                    <div class="Product-Details">
+                        <h4>Details</h4>
+                        <div class="Details-section">
+                            <div class="Details-label">
+                                <p><b>Dimensions:</b></p>
+                            </div>
+                            <div class="Details-info">
+                                <ul>
+                                    <li>Depth: 38 in.</li>
+                                    <li>Width: 84 in.</li>
+                                    <li>Height: 35 in.</li>
+                                    <li>Seat height: 18 in.</li>
+                                    <li>Arm height: 23 in.</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="Details-section">
+                            <div class="Details-label">
+                                <p><b>Plays well with:</b></p>
+                            </div>
+                            <div class="Details-info">
+                                <a class="related-trigger" href="#Related">Explore Products</a>
+                            </div>
+                        </div>
+                        <div class="Details-section">
+                            <div class="Details-label">
+                                <p><b>Shipping/Lead Time:</b></p>
+                            </div>
+                            <div class="Details-info">
+                                4-7 Weeks (Custom Made)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row grid-image-box">
+                <div class="main grid-main" style="background-color: white">
+                    <div class="Left-main item-grid-img">
+                        <img src="Resources/Sofas_Daybeds/axel_v_sofa_product/axelv-sofa4_704x.jpg">
+                    </div>
+                    <div class="Left-main item-grid-img">
+                        <img src="Resources/Sofas_Daybeds/axel_v_sofa_product/dransnewset1_800x800_crop_center.jpg">
+                    </div>
+                    <div class="Left-main item-grid-img">
+                        <img src="Resources/Sofas_Daybeds/axel_v_sofa_product/dranspillow1_800x800_crop_center.jpg">
+                    </div>
+                    <div class="Left-main item-grid-img">
+                        <img src="Resources/Item/image4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="Related" class="Related">
+                <h5>RELATED PRODUCTS</h5>
+                <p>We think you'll also like...</p>
+                <div class="Related-Row">
+                    <div class="Related-column">
+                        <img src="Resources/Sofas_Daybeds/Manhattan.jpg">
+                        <div class="related--item--details">
+                            <p>
+                                <a>THE MANHATTAN SOFA / SECTIONAL</a>
+                            </p>
+                            <p>$7,782.00</p>
+                        </div>
+                    </div>
+                    <div class="Related-column">
+                        <img src="Resources/Sofas_Daybeds/Marais.jpg">
+                        <div class="related--item--details">
+                            <p>
+                                <a>THE MARAIS SOFA / SECTIONAL</a>
+                            </p>
+                            <p>$5,463.00</p>
+                        </div>
+                    </div>
+                    <div class="Related-column">
+                        <img src="Resources/Sofas_Daybeds/Mcqueen_Sofa.jpg">
+                        <div class="related--item--details">
+                            <p>
+                                <a>MCQUEEN SOFA</a>
+                            </p>
+                            <p>$3,663.00</p>
+                            <p>Multiple colors available</p>
+                        </div>
+                    </div>
+                    <div class="Related-column">
+                        <img src="Resources/Sofas_Daybeds/Nobu.jpg">
+                        <div class="related--item--details">
+                            <p>
+                                <a>THE NOBU SOFA / SECTIONAL</a>
+                            </p>
+                            <p>$3,876.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-sub-section-1">
+
+        </div>
+        <div class="footer-sub-section-2">
+            <p>Visit us at our 6,000 square foot showroom in Waltham, MA, just miles outside of Boston, for many of our selections and lots of vintage too! Showroom: 96 Clematis Ave. Waltham, MA 02453. Hours: Mon-Sat 10-5</p>
+            <div class="social-icons">
+                <a href="https://twitter.com/modernrelikhome" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/modernrelikhome" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.pinterest.com/modernrelik/" class="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com/113685492164723538125" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/modernrelik/" class="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="footer-sub-section-3">
+            <h4>INFORMATION</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Visit The Store</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Return & Exchange</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Get Social With Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-sub-section-4">
+            <h4>SERVICES</h4>
+            <ul>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">To The Trade</a></li>
+                <li><a href="#">Trade Membership Application</a></li>
+                <li><a href="#">Trade CC Authorization Form</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Leave Us A Review</a></li>
+                <li><a href="#">Shop Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-sub-section-5">
+            <h4>GET IN TOUCH</h4>
+            <ul>
+                <li><a href="https://goo.gl/maps/GnKNPGs2tiP2" target="_blank"><i class="material-icons" style="font-size:15px">location_on</i> Modern Relik, 96 Clematis Ave, Waltham, MA, 02453</a></li>
+                <li><a href="tel:6175133336"><i class="material-icons" style="font-size:16px">call</i> 617 513 3336</a></li>
+                <li><a href="mailto:concierge@modernrelik.com" target="_blank"><i class="material-icons" style="font-size:15px;">mail_outline</i> concierge@modernrelik.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-sub-section-6">
+
+        </div>
+    </div>
+</body>
+<script>
+    function selectimg(img) {
+        var item_view = document.getElementById("item_view");
+        var path_img = "Resources/Item/Axel_V._Sofa-product/grid" + img + ".jpg";
+        item_view.src = path_img;
+    }
+
+    function closezoom() {
+        var zoom = document.getElementById("zoom");
+        zoom.style.width = "0px";
+        zoom.style.height = "0px";
+    }
+
+    function zoomimg() {
+        var zoom = document.getElementById("zoom");
+        var item_view = document.getElementById("item_view").src;
+        var zoom_img = document.getElementById("zoom_img");
+        zoom_img.src = item_view;
+        zoom.style.width = "100vw";
+        zoom.style.height = "100vh";
+    }
+</script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</html>
