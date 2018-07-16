@@ -686,6 +686,7 @@ body {
 
 .product-upper {
     display: flex;
+    flex:100%;
     flex-wrap: wrap;
     font-size: 14px;
     line-height: 1.6;
