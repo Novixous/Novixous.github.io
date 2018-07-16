@@ -252,6 +252,7 @@ body {
 
 /* Main column */
 
+
 .main {
     /*flex: 70%;*/
     /* IE10 */
@@ -265,7 +266,9 @@ body {
     position: relative;
 
 }
-
+.login-main {
+    padding: 160px 0;
+}
 .Funiture-text {
     font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
     font-weight: 400;
