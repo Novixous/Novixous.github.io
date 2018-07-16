@@ -234,6 +234,7 @@ body {
     flex-wrap: wrap;
     /* IE10 */
     flex-wrap: wrap;
+    min-height: 600px;
 
 }
 
