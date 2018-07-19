@@ -1525,7 +1525,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 10px 10px;
     margin-top: 30px;
     width: 90%;
 }
@@ -1535,7 +1534,7 @@ body {
 #sign_up_container input[type=submit] {
     display: block;
     margin: 0 auto;
-    width: 430px;
+    width: 90%;
     height: 30px;
     padding: 10px;
     border: 0.5px transparent black;
