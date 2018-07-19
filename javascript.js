@@ -1,4 +1,3 @@
-
 window.onresize = function () {
     Resize()
 };
@@ -29,15 +28,14 @@ function DefaultLogo() {
 }
 
 function Resize() {
-    if (document.documentElement.clientWidth > 1030) {
-        navbar.style.width = "100%";
-        navbar.style.height = "auto";
+    if (document.documentElement.clientWidth > 1047) {
+        navbar.style.width = "0px";
+        navbar.style.height = "100%";
         header.style.position = "relative";
         navbutton.style.fontSize = "0px";
         title_image.src = "Resources/logo_410x.png";
         title_image.style.width = "400px";
         title_image.style.height = "40px";
-        row.style.paddingTop = "0px";
         if (document.documentElement.clientWidth < 1600) {
             small_logo.style.marginTop = "0px";
             small_logo.style.display = "none";
@@ -52,7 +50,10 @@ function Resize() {
                 small_logo.style.display = "block";
             }
         }
-    } else if (document.documentElement.clientWidth <= 1030) {
+    }
+    if (document.documentElement.clientWidth <= 1047) {
+        navbar.style.width = 0 % ;
+    } else if (document.documentElement.clientWidth <= 1047) {
 
         navbar.style.overflow = "hidden";
         navbar.classList.remove("sticky");
@@ -69,7 +70,6 @@ function Resize() {
         navbar.style.transition = "0s";
         navbar.style.width = "0";
         navbar.style.height = "100%";
-        row.style.paddingTop = "100px";
         /*
         text-align: center;
         width: 3.5%;
@@ -84,9 +84,8 @@ function Resize() {
 }
 
 function myFunction() {
-    if (document.documentElement.clientWidth > 1030) {
+    if (document.documentElement.clientWidth > 1047) {
         navbutton.style.fontSize = "0px";
-        row.style.paddingTop = "0px";
         if (window.pageYOffset >= sticky_pos) {
             small_logo.style.marginTop = "25px";
             small_logo.style.display = "block";
@@ -106,9 +105,8 @@ function myFunction() {
         small_logo.style.marginTop = "0px";
         small_logo.style.display = "none";
     }
-    if (document.documentElement.clientWidth <= 1030) {
+    if (document.documentElement.clientWidth <= 1047) {
         navbutton.style.fontSize = "25px";
-        row.style.paddingTop = "100px";
         if (window.pageYOffset >= sticky_pos) {
             navbutton.style.position = "fixed";
             navbutton.style.zIndex = "7";
