@@ -226,7 +226,7 @@
     var title_image = document.getElementById("title-image");
 
     function DefaultLogo() {
-        if (document.documentElement.clientWidth > 1030) {
+        if (document.documentElement.clientWidth > 1047) {
             title_image.src = "Resources/logo_410x.png";
             title_image.style.width = "400px";
         } else {
@@ -237,7 +237,7 @@
     }
 
     function Resize() {
-        if (document.documentElement.clientWidth > 1030) {
+        if (document.documentElement.clientWidth > 1047) {
             navbar.style.width = "100%";
             navbar.style.height = "auto";
             header.style.position = "relative";
@@ -263,7 +263,7 @@
         if(document.documentElement.clientWidth <= 1047){
             navbar.style.width = 0%;
         } 
-        else if (document.documentElement.clientWidth <= 1030) 
+        else if (document.documentElement.clientWidth <= 1047) 
         {
             
             navbar.style.overflow = "hidden";
@@ -295,7 +295,7 @@
     }
 
     function myFunction() {
-        if (document.documentElement.clientWidth > 1030) {
+        if (document.documentElement.clientWidth > 1047) {
             navbutton.style.fontSize = "0px";
             if (window.pageYOffset >= sticky_pos) {
                 small_logo.style.marginTop = "25px";
@@ -316,7 +316,7 @@
             small_logo.style.marginTop = "0px";
             small_logo.style.display = "none";
         }
-        if (document.documentElement.clientWidth <= 1030) {
+        if (document.documentElement.clientWidth <= 1047) {
             navbutton.style.fontSize = "25px";
             if (window.pageYOffset >= sticky_pos) {
                 navbutton.style.position = "fixed";
