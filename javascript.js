@@ -51,6 +51,8 @@ function Resize() {
             }
         }
     }
+    if (document.documentElement.clientWidth <= 1047) {
+        navbar.style.width = 0 % ;
     } else if (document.documentElement.clientWidth <= 1047) {
 
         navbar.style.overflow = "hidden";
