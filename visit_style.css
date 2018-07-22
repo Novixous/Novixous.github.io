@@ -33,10 +33,11 @@ html {
     flex-wrap: wrap;
     flex: 100%;
 }
-.normal_block img{
+
+.normal_block img {
     width: 100%;
-    height:100%;
-    
+    height: 100%;
+
 }
 
 
@@ -197,11 +198,13 @@ html {
 
 
 /*Responsive*/
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1200px) {
     #Sub_img {
         min-width: 700px;
     }
 }
+
 @media screen and (max-width: 960px) {
     .divide_block {
         display: flex;
@@ -211,5 +214,16 @@ html {
     .Subblock {
         flex: 100%;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #Sub_img {
+        min-width: 500px;
+        max-height: 500px;
+    }
+    .normal_block img {
+        width: 500px;
+        height: 500px;
     }
 }
