@@ -1,4 +1,5 @@
 *,
+
 html {
     padding: 0;
     margin: 0;
@@ -13,26 +14,27 @@ html {
 
 .upper_block {
     width: 100%;
-    display: block;
+    display: flex;
     margin-bottom: 0;
     padding-bottom: 0;
-    height: 845px;
 }
 
 #Left1 {
     width: 50%;
-    display: inline-block;
-    float: left;
+    display: flex;
+    flex:50%;
 }
 
 #Right1 {
     width: 50%;
-    display: inline-block;
+    display: flex;
+    flex: 50%;
 }
 
 #Right1 img {
     width: 100%;
-    height: 847px;
+    height: 100%;
+    min-width: 600px;
 }
 
 .visit_upper_text iframe {
@@ -81,7 +83,6 @@ html {
     display: block;
     margin-bottom: 0;
     padding-bottom: 0;
-    height: 1050px;
 }
 
 #Left2 {
@@ -91,7 +92,7 @@ html {
 
 #Left2 img {
     width: 100%;
-    height: 1050px;
+    height: 100%;
 }
 
 #Right2 {
@@ -280,7 +281,7 @@ html {
 
 @media screen and (max-width: 960px) {
     .upper_block {
-        height: 1240px;
+        display: block;
     }
 
     #Left1 {
@@ -294,19 +295,16 @@ html {
 
     #Right1 img {
         width: 100%;
-        height: 500px;
+        height: 100%;
     }
 
     .pic_in_middle img {
-        height: 500px;
     }
 
     .pic_in_middle_special img {
-        height: 500px;
     }
 
     .middle_block {
-        height: 1450px;
     }
 
     #Left2 {
@@ -315,7 +313,6 @@ html {
 
     #Left2 img {
         width: 100%;
-        height: 500px;
     }
 
     #Right2 {
@@ -406,37 +403,15 @@ html {
 }*/
 
 @media screen and (max-width: 560px) {
-    .middle_block {
-        height: 1500px;
-    }
 
-    .under_block {
-        height: 1900px;
+    #Right3 {
+        overflow: visible;
     }
 }
 
-@media screen and (max-width: 420px) {
-    .middle_block {
-        height: 1600px;
-    }
-
-    .under_block {
-        height: 2100px;
-    }
-}
 
 @media screen and (max-width: 380px) {
-    .upper_block {
-        height: 1500px;
-    }
 
-    .middle_block {
-        height: 1750px;
-    }
-
-    .under_block {
-        height: 2500px;
-    }
 
     #insta {
         background: #E20000;
@@ -457,12 +432,5 @@ html {
     }
 }
 
-@media screen and (max-width: 320px) {
-    .middle_block {
-        height: 1790px;
-    }
 
-    .under_block {
-        height: 2300px;
-    }
-}
+
