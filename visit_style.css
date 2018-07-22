@@ -223,6 +223,26 @@ html {
     }
     .normal_block img {
         min-width: 500px;
-        max-height:  height: 500px;
+        max-height: 500px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #Sub_img {
+        min-width: 450px;
+        max-height: 450px;
+    }
+    .normal_block img {
+        min-width: 450px;
+        max-height: 450px;
+    }
+}
+@media screen and (max-width: 350px) {
+    #Sub_img {
+        min-width: 350px;
+        max-height: 350px;
+    }
+    .normal_block img {
+        min-width: 350px;
+        max-height: 350px;
     }
 }
