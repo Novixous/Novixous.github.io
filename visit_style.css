@@ -58,7 +58,12 @@ html {
 .visit_upper_text p {
     font-weight: 300;
 }
-
+.pic_in_middle {
+    width: 100%;
+}
+.middle_block{
+    width: 100%;
+}
 .pic_in_middle img {
     display: block;
     width: 100%;
