@@ -1,5 +1,7 @@
 *,
-
+.row div{
+    overflow: none;
+}
 html {
     padding: 0;
     margin: 0;
@@ -12,15 +14,27 @@ html {
     cursor: default;
 }
 
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+}
 .divide_block {
     display: flex;
     flex-wrap: wrap;
     flex: 100%;
+    overflow: visible;
 }
 
 .Subblock {
     flex: 50%;
     flex-wrap: wrap;
+    overflow: visible;
 }
 
 #Sub_img {
@@ -36,7 +50,7 @@ html {
 
 .normal_block img {
     width: 100%;
-
+    height: 100%;
 }
 
 
@@ -198,51 +212,33 @@ html {
 
 /*Responsive*/
 
-@media screen and (max-width: 1200px) {
-    #Sub_img {
-        min-width: 700px;
-    }
-}
 
 @media screen and (max-width: 960px) {
     .divide_block {
         display: flex;
         flex-wrap: wrap;
         flex: 100%;
+        width: 100%;
     }
     .Subblock {
         flex: 100%;
         flex-wrap: wrap;
+        width: 100%;
     }
 }
-
 @media screen and (max-width: 500px) {
+    .img_frame{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
     #Sub_img {
-        min-width: 500px;
-        max-height: 500px;
+        width: 100%;
+        height: 100%;
     }
     .normal_block img {
-        min-width: 500px;
-        max-height: 500px;
-    }
-}
-@media screen and (max-width: 450px) {
-    #Sub_img {
-        min-width: 450px;
-        max-height: 450px;
-    }
-    .normal_block img {
-        min-width: 450px;
-        max-height: 450px;
-    }
-}
-@media screen and (max-width: 350px) {
-    #Sub_img {
-        min-width: 350px;
-        max-height: 350px;
-    }
-    .normal_block img {
-        min-width: 350px;
-        max-height: 350px;
+        width: 100%;
+        height: 100%;
+        
     }
 }
