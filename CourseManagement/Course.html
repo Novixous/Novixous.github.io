@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Course.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Monospaced}
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.string {color: #ce7b00}
+.comment {color: #969696}
+.ST2 {color: #009900}
+.ST0 {color: #969696; font-family: Monospaced; font-weight: bold}
+.ST1 {font-family: Monospaced; font-weight: bold}
+.ST3 {font-family: Monospaced; font-style: italic}
+.literal {color: #0000e6}
+-->
+</style>
+</head>
+<body>
+<table width="100%"><tr><td align="center">C:\Users\appuals\Desktop\desktop lab\CourseManagement\src\models\Course.java</td></tr></table>
+<pre>
+ 1 <span class="comment">/*</span>
+ 2 <span class="comment"> * To change this license header, choose License Headers in Project Properties.</span>
+ 3 <span class="comment"> * To change this template file, choose Tools | Templates</span>
+ 4 <span class="comment"> * and open the template in the editor.</span>
+ 5 <span class="comment"> */</span>
+ 6 <span class="literal">package</span> models;
+ 7 
+ 8 <span class="comment">/**</span>
+ 9 <span class="comment"> *</span>
+10 <span class="comment"> * </span><span class="ST0">@author</span> <span class="comment">Admin</span>
+11  <span class="comment">*/</span>
+12 <span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Course</span> <span class="literal">implements</span> Comparable&lt;Course&gt; {
+13 
+14     <span class="literal">private</span> String <span class="ST2">codeCourse</span>;
+15     <span class="literal">private</span> String <span class="ST2">nameCourse</span>;
+16     <span class="literal">private</span> <span class="literal">int</span> <span class="ST2">credit</span>;
+17 
+18     <span class="literal">public</span> <span class="ST1">Course</span>() {
+19     }
+20 
+21     <span class="literal">public</span> <span class="ST1">Course</span>(String codeCourse, String nameCourse, <span class="literal">int</span> credit) {
+22         <span class="literal">this</span>.<span class="ST2">codeCourse</span> = codeCourse;
+23         <span class="literal">this</span>.<span class="ST2">nameCourse</span> = nameCourse;
+24         <span class="literal">this</span>.<span class="ST2">credit</span> = credit;
+25     }
+26 
+27     <span class="literal">public</span> String <span class="ST1">getCodeCourse</span>() {
+28         <span class="literal">return</span> <span class="ST2">codeCourse</span>;
+29     }
+30 
+31     <span class="literal">public</span> <span class="literal">void</span> <span class="ST1">setCodeCourse</span>(String codeCourse) {
+32         <span class="literal">this</span>.<span class="ST2">codeCourse</span> = codeCourse;
+33     }
+34 
+35     <span class="literal">public</span> String <span class="ST1">getNameCourse</span>() {
+36         <span class="literal">return</span> <span class="ST2">nameCourse</span>;
+37     }
+38 
+39     <span class="literal">public</span> <span class="literal">void</span> <span class="ST1">setNameCourse</span>(String nameCourse) {
+40         <span class="literal">this</span>.<span class="ST2">nameCourse</span> = nameCourse;
+41     }
+42 
+43     <span class="literal">public</span> <span class="literal">int</span> <span class="ST1">getCredit</span>() {
+44         <span class="literal">return</span> <span class="ST2">credit</span>;
+45     }
+46 
+47     <span class="literal">public</span> <span class="literal">void</span> <span class="ST1">setCredit</span>(<span class="literal">int</span> credit) {
+48         <span class="literal">this</span>.<span class="ST2">credit</span> = credit;
+49     }
+50 
+51     @Override
+52     <span class="literal">public</span> <span class="literal">int</span> <span class="ST1">compareTo</span>(Course o) {
+53         <span class="literal">return</span> (<span class="literal">this</span>.<span class="ST2">credit</span> - o.<span class="ST2">credit</span>);
+54     }
+55 
+56     <span class="literal">public</span> String <span class="ST1">showDetailed</span>() {
+57         <span class="literal">return</span> String.<span class="ST3">format</span>(<span class="string">&quot;</span><span class="string">|%-15s|%-10s|%-2d|</span><span class="string">&quot;</span>, <span class="ST2">codeCourse</span>, <span class="ST2">nameCourse</span>, <span class="ST2">credit</span>);
+58     }
+59 
+60 }
+61 
+</pre></body>
+</html>
