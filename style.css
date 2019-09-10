@@ -251,6 +251,7 @@ body {
 
 /* Main column */
 
+
 .main {
     /*flex: 70%;*/
     /* IE10 */
@@ -264,7 +265,9 @@ body {
     position: relative;
 
 }
-
+.login-main {
+    padding: 160px 0;
+}
 .Funiture-text {
     font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
     font-weight: 400;
@@ -336,6 +339,7 @@ body {
 .Left-main h1 {
     text-align: center;
 }
+
 
 .Right-main {
     flex: 50%;
@@ -452,6 +456,30 @@ body {
     transform: scale(1);
 }
 
+.aboutus {
+    background-color: white;
+    text-align: left;
+}
+
+.aboutus_text {
+    margin: 5%;
+    font-family: Baskerville;
+    font-size: 1.07em;
+    line-height: 2;
+    font-weight: 300;
+
+}
+
+.upper {
+    background-color: #eeeff0;
+}
+
+.aboutus img:hover {
+    transform: scale(1.0);
+    transition: all 1.2s;
+    cursor: default;
+}
+
 .main-container {
     width: 100%;
     background-color: white;
@@ -514,13 +542,19 @@ body {
     font-size: 12px;
     font-weight: 400;
 }
+
 .independent-item .item p {
     line-height: 1.6;
     font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
+
 .independent-item .item img {
     width: 100%;
 
+}
+
+.item-main img:hover {
+    transform: scale(1);
 }
 
 /* Footer */
@@ -626,17 +660,327 @@ body {
     font-size: 20px;
 }
 
+/*************************************************************************************************/
+
+/*************************************************************************************************/
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*------------------------------------- START OF ITEM PAGE---------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*************************************************************************************************/
+
+/*************************************************************************************************/
+
+.left-single-product ul {
+    list-style: none;
+    width: 130px;
+}
+
+.product-upper img {
+    width: 100%;
+}
+
+.product-upper {
+    display: flex;
+    flex:100%;
+    flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    color: #333;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+.product-upper img:hover {
+    transform: scale(1.1);
+}
+
+.left-single-product,
+.right-single-product {
+    flex: 25%;
+    font-family: 'gurmukhi_mnregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+.right-single-product {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.left-single-product ul {
+    margin: 24px 60px;
+    padding: 0 0;
+}
+
+.middle-single-product {
+    overflow: hidden;
+    padding: 24px 20px;
+    flex: 30%;
+}
+
+.middle-single-product img:hover {
+    transform: scale(1.05);
+    cursor: zoom-in;
+}
+
+.product-header {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 24px 0;
+    margin-bottom: 24px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.selector-wrapper,
+.quantity-wraper {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.selector-wrapper label,
+.quantity-wraper label {
+    font-family: 'gurmukhi_mnregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    text-align: left;
+    width: 50%;
+    float: left;
+}
+
+.product-selector {
+    width: 50%;
+    height: 30px;
+    float: right;
+    max-width: none;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0;
+}
+
+.item-button {
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    font-family: 'gurmukhi_mnregular', Arial;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #212121;
+    color: #fff;
+}
+
+.details-trigger {
+    margin: 20px auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'gurmukhi_mnregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    color: #212121;
+    text-decoration: none;
+}
+
+.ProductDetails {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fafafa;
+    transform: skewY(-2deg);
+    margin: 0 0;
+    padding-top: 80px;
+    padding: 50px 0;
+}
+
+.ProductDetails-column {
+    transform: skewY(2deg);
+    flex: 33.333333%;
+}
+
+.item-social {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Details-label {
+    width: 50%;
+    float: left;
+}
+
+.Details-info {
+    padding-top: 15px;
+    width: 50%;
+    float: right;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    color: #333;
+}
+
+.Details-info a {
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    color: #333;
+}
+
+.Details-info ul {
+    list-style: none;
+    padding: 0 0;
+}
+
+.Product-Details {
+    width: 70%;
+    margin-left: 20%;
+}
+
+.Details-section {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+
+.item-grid-img img:hover {
+    background-color: #fafafa;
+    transform: scale(1);
+}
+
+.grid-image-box {
+    transform: skewY(-2deg);
+    padding-bottom: 45px;
+}
+
+.grid-main {
+    margin-top: -50px;
+    transform: skewY(2deg);
+}
+
+.item-grid-img {
+    background-color: #fafafa;
+}
+
+.item-grid-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.Related {
+    width: 100%;
+    text-align: center;
+}
+
+.Related-Row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Related-column {
+    padding: 0.5%;
+    flex: 25%;
+}
+
+.Related-column img {
+    width: 100%;
+}
+
+.Related-column img:hover {
+    transform: scale(1.03);
+}
+
+.Related-column a {
+    font-family: 'gurmukhi_mnregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    color: #212121;
+    margin-bottom: 4px;
+}
+
+.zoom {
+    display: inline-block;
+    position: fixed;
+    width: 0px;
+    height: 0px;
+    z-index: 20;
+    background-color: #FFFFFF;
+}
+
+.zoom img {
+    width: 100%;
+    border: 1px solid #FFFFFF;
+}
+
+.zoom_container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+
+#closezoombtn {
+    text-decoration: none;
+    color: black;
+    white-space: 10px;
+    position: absolute;
+    top: 20px;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    font-size: 36px;
+    right: 50px;
+}
+
+#closezoombtn:hover {
+    color: #ff0000;
+}
+
+/*************************************************************************************************/
+
+/*************************************************************************************************/
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------- END OF ITEM PAGE-------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*************************************************************************************************/
+
+/*************************************************************************************************/
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 700px) {
     .row {
-        flex-direction: column;
+        /*flex-direction: column;*/
     }
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 
-@media screen and (max-width: 1047px) {
+@media screen and (max-width: 1030px) {
     #MenuText {
         font-size: 30px;
         color: aliceblue;
@@ -700,6 +1044,7 @@ body {
     }
     .navbar div {
         position: sticky;
+        -webkit-position: sticky;
     }
     .navbar a {
         padding: 8px 8px 8px 32px;
@@ -745,13 +1090,13 @@ body {
     .dropdown {
         width: 100%;
         text-align: left;
-        position: inherit;
+        position: sticky;
     }
     .dropbtn {
         margin: 0 auto;
         text-align: left;
         width: 100%;
-        position: inherit;
+        position: sticky;
     }
     .Left-main {
         flex: 100%;
@@ -785,6 +1130,52 @@ body {
         flex: 48%;
         margin: 0.5%;
     }
+    /*************************************************************************************************/
+    /*************************************************************************************************/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*------------------------------------- START OF ITEM PAGE---------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*************************************************************************************************/
+    /*************************************************************************************************/
+    .left-single-product {
+        flex: 30%;
+        width: 15%;
+    }
+    .right-single-product {
+        flex: 100%;
+    }
+    .middle-single-product {
+        flex: 70%;
+        padding: 20px 4%;
+    }
+    .left-single-product ul {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .item-grid-img {
+        flex: 50%;
+        width: 50%;
+    }
+    .ProductDetails-column {
+        flex: 100%;
+        width: 100%;
+    }
+    .ProductDetails:nth-child(2) {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    /*************************************************************************************************/
+    /*************************************************************************************************/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*----------------------------------- END OF ITEM PAGE-------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*************************************************************************************************/
+    /*************************************************************************************************/
 }
 
 @media screen and (max-width: 1100px) {
@@ -846,7 +1237,7 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
     .navbar {
         width: 100%;
     }
@@ -859,13 +1250,13 @@ body {
     .dropdown {
         width: 100%;
         text-align: left;
-        position: inherit;
+        position: sticky;
     }
     .dropbtn {
         margin: 0 auto;
         text-align: left;
         width: 100%;
-        position: inherit;
+        position: sticky;
     }
     .Left-main {
         flex: 100%;
@@ -927,13 +1318,141 @@ body {
 
 }
 
+@media screen and (max-width: 500px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
+        text-align: left;
+
+    }
+    .dropdown {
+        width: 100%;
+        text-align: left;
+        position: sticky;
+    }
+    .dropbtn {
+        margin: 0 auto;
+        text-align: left;
+        width: 100%;
+        position: sticky;
+    }
+    .Left-main {
+        flex: 100%;
+    }
+    .Right-main {
+        flex: 100%;
+    }
+    .image-text,
+    .Inside-left-image-text,
+    .inner-image-text {
+        font-size: 0.6em;
+    }
+    .footer-sub-section-1,
+    .footer-sub-section-2,
+    .footer-sub-section-3,
+    .footer-sub-section-4,
+    .footer-sub-section-5,
+    .footer-sub-section-6 {
+        flex: 100%;
+        text-align: left;
+        padding-left: 10%;
+        font-size: 15px;
+
+    }
+
+
+    .footer-sub-section-3 ul,
+    .footer-sub-section-4 ul,
+    .footer-sub-section-5 ul {
+        text-align: left;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .footer-sub-section-3 a,
+    .footer-sub-section-4 a,
+    .footer-sub-section-5 a {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+    }
+
+    .footer-sub-section-3 li,
+    .footer-sub-section-4 li,
+    .footer-sub-section-5 li {
+        display: block
+    }
+
+    .social-icons {
+        font-size: 25px;
+        word-spacing: 20px;
+        color: white;
+    }
+
+    .social-icons a {
+        color: gray;
+        font-size: 20px;
+    }
+    /*************************************************************************************************/
+    /*************************************************************************************************/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*------------------------------------- START OF ITEM PAGE---------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*************************************************************************************************/
+    /*************************************************************************************************/
+    .left-single-product {
+        flex: 30%;
+        width: 15%;
+    }
+    .right-single-product {
+        flex: 100%;
+    }
+    .middle-single-product {
+        flex: 70%;
+        padding: 20px 4%;
+    }
+    .left-single-product ul {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .ProductDetails-column {
+        flex: 100%;
+        width: 100%;
+    }
+    .Related-column {
+        flex: 50%;
+        width: 50%;
+    }
+    .zoom img {
+        width: 100%;
+    }
+
+    /*************************************************************************************************/
+    /*************************************************************************************************/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*----------------------------------- END OF ITEM PAGE-------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------*/
+    /*************************************************************************************************/
+    /*************************************************************************************************/
+}
+
+/*Log in form css*/
+
 /*Log in form css*/
 
 #SIcontainer {
     position: relative;
     display: block;
     padding: 15px;
-    width: 30%;
+    width: 50%;
     height: 280px;
     margin: 0 auto;
     margin-top: 50px;
@@ -998,6 +1517,7 @@ body {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+
 }
 
 #sign_up_container form {
@@ -1006,6 +1526,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 30px;
+    width: 100%;
 }
 
 #sign_up_container input[type=text],
@@ -1013,7 +1534,7 @@ body {
 #sign_up_container input[type=submit] {
     display: block;
     margin: 0 auto;
-    width: 430px;
+    width: 100%;
     height: 30px;
     padding: 10px;
     border: 0.5px transparent black;
@@ -1046,6 +1567,183 @@ body {
     text-align: center;
     margin: 0 auto;
 }
+
+/*Responsive for Log In Form*/
+
+@media screen and (max-width: 500px) {
+
+    #SIcontainer {
+        width: 90%;
+    }
+
+    #SIcontainer form {
+        width: 90%;
+    }
+
+    #SIcontainer #signuplink {
+        margin-top: 150px;
+        font-size: 1em;
+    }
+
+    #SIcontainer h2 {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    #SIcontainer input[type=text],
+    #SIcontainer input[type=password],
+    #SIcontainer input[type=submit] {
+        width: 200px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #SIcontainer {
+        width: 90%;
+    }
+
+    #SIcontainer form {
+        width: 60%;
+    }
+
+    #SIcontainer #signuplink {
+        margin-top: 150px;
+        font-size: 1em;
+    }
+
+    #SIcontainer h2 {
+        display: block;
+        text-align: center;
+        margin-top: 45px;
+        font-size: 1.2em;
+    }
+
+    #SIcontainer input[type=text],
+    #SIcontainer input[type=password],
+    #SIcontainer input[type=submit] {
+        width: 100%;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 1047px) {
+    #SIcontainer {
+        width: 60%;
+    }
+
+    #SIcontainer form {
+        width: 60%;
+    }
+
+    #SIcontainer #signuplink {
+        margin-top: 150px;
+        font-size: 1em;
+    }
+
+    #SIcontainer h2 {
+        display: block;
+        text-align: center;
+        margin-top: 45px;
+        font-size: 1.2em;
+    }
+
+    #SIcontainer input[type=text],
+    #SIcontainer input[type=password],
+    #SIcontainer input[type=submit] {
+        width: 100%;
+        height: 15px;
+    }
+}
+
+/*Responsive for SIGN UP FORM*/
+
+@media screen and (max-width: 100px) {
+    #sign_up_container h2 {
+        display: block;
+        text-align: center;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #sign_up_container {
+        width: 90%;
+    }
+
+    #sign_up_container form {
+        width: 90%;
+    }
+
+    #sign_up_container h2 {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    #sign_up_container input[type=text],
+    #sign_up_container input[type=password],
+    #sign_up_container input[type=submit] {
+        width: 200px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #sign_up_container {
+        width: 90%;
+    }
+
+    #sign_up_container form {
+        width: 60%;
+    }
+
+    #sign_up_container h2 {
+        display: block;
+        text-align: center;
+        margin-top: 45px;
+        font-size: 1.1em;
+    }
+
+    #sign_up_container input[type=text],
+    #sign_up_container input[type=password],
+    #sign_up_container input[type=submit] {
+        width: 100%;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    #sign_up_container {
+        width: 60%;
+    }
+
+    #sign_up_container form {
+        width: 60%;
+    }
+
+    #sign_up_container h2 {
+        display: block;
+        text-align: center;
+        margin-top: 45px;
+        font-size: 1.1em;
+    }
+
+    #sign_up_container input[type=text],
+    #sign_up_container input[type=password],
+    #sign_up_container input[type=submit] {
+        width: 100%;
+        height: 15px;
+    }
+}
+
+
 
 
 .mySlides {
@@ -1131,6 +1829,8 @@ img {
         opacity: 1
     }
 }
+
+/* On smaller screens, decrease text size */
 
 /* On smaller screens, decrease text size */
 
